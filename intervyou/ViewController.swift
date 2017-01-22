@@ -1,25 +1,48 @@
-//
-//  ViewController.swift
-//  intervyou
-//
-//  Created by Brian Shih on 1/21/17.
-//  Copyright © 2017 BrianShih. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet var image: UIImageView!
+   // var nsTimerObject = Timer.scheduledTimer(timeInterval: 5, target: self, selector: "goToNext()", userInfo: nil, repeats: false)
 
+    
+    func fade() {
+        image.alpha = 1
+        UIView.animate(withDuration: 3, animations: {
+            self.image.alpha = 0
+        }, completion: { finished in
+            self.performSegue(withIdentifier: "toCompany", sender: self)
+        })
+        
+        //
+
+    }
+    func goToNext() {
+        
+
+    }
+    var number = 1
+    var isAnimating = false
+    
+    func animate () {
+          }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+     //   nsTimerObject.fire()
+        self.view.backgroundColor = UIColor.black
+        fade()
+
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
-

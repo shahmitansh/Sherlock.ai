@@ -7,14 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03DE74041E343CE5007A658B /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DE74031E343CE5007A658B /* Logo.png */; };
+		03DE74061E3442B2007A658B /* IBM.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DE74051E3442B2007A658B /* IBM.png */; };
+		03DE74091E3445C5007A658B /* Goldman.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DE74071E3445C5007A658B /* Goldman.png */; };
+		03DE740A1E3445C5007A658B /* Snap.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DE74081E3445C5007A658B /* Snap.png */; };
+		03DE740C1E344704007A658B /* Google.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DE740B1E344704007A658B /* Google.png */; };
+		03DE740E1E344757007A658B /* Military.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DE740D1E344757007A658B /* Military.png */; };
 		7129D6391E342EB300B022CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7129D6381E342EB300B022CA /* AppDelegate.swift */; };
 		7129D63B1E342EB300B022CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7129D63A1E342EB300B022CA /* ViewController.swift */; };
 		7129D63E1E342EB300B022CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7129D63C1E342EB300B022CA /* Main.storyboard */; };
 		7129D6401E342EB300B022CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7129D63F1E342EB300B022CA /* Assets.xcassets */; };
 		7129D6431E342EB300B022CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7129D6411E342EB300B022CA /* LaunchScreen.storyboard */; };
+		7129D64B1E3434E000B022CA /* WhichCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7129D64A1E3434E000B022CA /* WhichCompany.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03DE74031E343CE5007A658B /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		03DE74051E3442B2007A658B /* IBM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IBM.png; sourceTree = "<group>"; };
+		03DE74071E3445C5007A658B /* Goldman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Goldman.png; sourceTree = "<group>"; };
+		03DE74081E3445C5007A658B /* Snap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snap.png; sourceTree = "<group>"; };
+		03DE740B1E344704007A658B /* Google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Google.png; sourceTree = "<group>"; };
+		03DE740D1E344757007A658B /* Military.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Military.png; sourceTree = "<group>"; };
 		7129D6351E342EB300B022CA /* intervyou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intervyou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7129D6381E342EB300B022CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7129D63A1E342EB300B022CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +35,7 @@
 		7129D63F1E342EB300B022CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7129D6421E342EB300B022CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7129D6441E342EB300B022CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7129D64A1E3434E000B022CA /* WhichCompany.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhichCompany.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +68,18 @@
 		7129D6371E342EB300B022CA /* intervyou */ = {
 			isa = PBXGroup;
 			children = (
+				03DE74051E3442B2007A658B /* IBM.png */,
 				7129D6381E342EB300B022CA /* AppDelegate.swift */,
 				7129D63A1E342EB300B022CA /* ViewController.swift */,
 				7129D63C1E342EB300B022CA /* Main.storyboard */,
+				03DE740D1E344757007A658B /* Military.png */,
+				03DE740B1E344704007A658B /* Google.png */,
+				03DE74071E3445C5007A658B /* Goldman.png */,
+				03DE74081E3445C5007A658B /* Snap.png */,
+				7129D64A1E3434E000B022CA /* WhichCompany.swift */,
 				7129D63F1E342EB300B022CA /* Assets.xcassets */,
 				7129D6411E342EB300B022CA /* LaunchScreen.storyboard */,
+				03DE74031E343CE5007A658B /* Logo.png */,
 				7129D6441E342EB300B022CA /* Info.plist */,
 			);
 			path = intervyou;
@@ -123,7 +144,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03DE74091E3445C5007A658B /* Goldman.png in Resources */,
+				03DE74061E3442B2007A658B /* IBM.png in Resources */,
+				03DE740C1E344704007A658B /* Google.png in Resources */,
+				03DE740A1E3445C5007A658B /* Snap.png in Resources */,
+				03DE74041E343CE5007A658B /* Logo.png in Resources */,
 				7129D6431E342EB300B022CA /* LaunchScreen.storyboard in Resources */,
+				03DE740E1E344757007A658B /* Military.png in Resources */,
 				7129D6401E342EB300B022CA /* Assets.xcassets in Resources */,
 				7129D63E1E342EB300B022CA /* Main.storyboard in Resources */,
 			);
@@ -136,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7129D64B1E3434E000B022CA /* WhichCompany.swift in Sources */,
 				7129D63B1E342EB300B022CA /* ViewController.swift in Sources */,
 				7129D6391E342EB300B022CA /* AppDelegate.swift in Sources */,
 			);
@@ -297,6 +325,7 @@
 				7129D6491E342EB300B022CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
