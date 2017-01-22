@@ -33,7 +33,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
      //   nsTimerObject.fire()
-        self.view.backgroundColor = UIColor.black
         fade()
 
         // Do any additional setup after loading the view, typically from a nib.

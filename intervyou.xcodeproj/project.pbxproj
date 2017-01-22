@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03DE74041E343CE5007A658B /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DE74031E343CE5007A658B /* Logo.png */; };
-		03DE74061E3442B2007A658B /* IBM.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DE74051E3442B2007A658B /* IBM.png */; };
+		03DE74061E3442B2007A658B /* IBMt.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DE74051E3442B2007A658B /* IBMt.png */; };
 		03DE74091E3445C5007A658B /* Goldman.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DE74071E3445C5007A658B /* Goldman.png */; };
 		03DE740A1E3445C5007A658B /* Snap.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DE74081E3445C5007A658B /* Snap.png */; };
 		03DE740C1E344704007A658B /* Google.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DE740B1E344704007A658B /* Google.png */; };
@@ -19,11 +19,34 @@
 		7129D6401E342EB300B022CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7129D63F1E342EB300B022CA /* Assets.xcassets */; };
 		7129D6431E342EB300B022CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7129D6411E342EB300B022CA /* LaunchScreen.storyboard */; };
 		7129D64B1E3434E000B022CA /* WhichCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7129D64A1E3434E000B022CA /* WhichCompany.swift */; };
+		77E9F7F71E344A4E007E5A7B /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E9F7F51E344A4E007E5A7B /* RestKit.framework */; };
+		77E9F7F81E344A4E007E5A7B /* ToneAnalyzerV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E9F7F61E344A4E007E5A7B /* ToneAnalyzerV3.framework */; };
+		77E9F7F91E344A78007E5A7B /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E9F7F51E344A4E007E5A7B /* RestKit.framework */; };
+		77E9F7FA1E344A78007E5A7B /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77E9F7F51E344A4E007E5A7B /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		77E9F7FB1E344A78007E5A7B /* ToneAnalyzerV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E9F7F61E344A4E007E5A7B /* ToneAnalyzerV3.framework */; };
+		77E9F7FC1E344A78007E5A7B /* ToneAnalyzerV3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77E9F7F61E344A4E007E5A7B /* ToneAnalyzerV3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		77E9F7FF1E344B9B007E5A7B /* InterviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E9F7FE1E344B9B007E5A7B /* InterviewViewController.swift */; };
+		77E9F8011E345060007E5A7B /* stringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E9F8001E345060007E5A7B /* stringExtension.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		77E9F7FD1E344A78007E5A7B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				77E9F7FA1E344A78007E5A7B /* RestKit.framework in Embed Frameworks */,
+				77E9F7FC1E344A78007E5A7B /* ToneAnalyzerV3.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		03DE74031E343CE5007A658B /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
-		03DE74051E3442B2007A658B /* IBM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IBM.png; sourceTree = "<group>"; };
+		03DE74051E3442B2007A658B /* IBMt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IBMt.png; sourceTree = "<group>"; };
 		03DE74071E3445C5007A658B /* Goldman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Goldman.png; sourceTree = "<group>"; };
 		03DE74081E3445C5007A658B /* Snap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snap.png; sourceTree = "<group>"; };
 		03DE740B1E344704007A658B /* Google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Google.png; sourceTree = "<group>"; };
@@ -36,6 +59,10 @@
 		7129D6421E342EB300B022CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7129D6441E342EB300B022CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7129D64A1E3434E000B022CA /* WhichCompany.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhichCompany.swift; sourceTree = "<group>"; };
+		77E9F7F51E344A4E007E5A7B /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RestKit.framework; sourceTree = "<group>"; };
+		77E9F7F61E344A4E007E5A7B /* ToneAnalyzerV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ToneAnalyzerV3.framework; sourceTree = "<group>"; };
+		77E9F7FE1E344B9B007E5A7B /* InterviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterviewViewController.swift; sourceTree = "<group>"; };
+		77E9F8001E345060007E5A7B /* stringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77E9F7F71E344A4E007E5A7B /* RestKit.framework in Frameworks */,
+				77E9F7FB1E344A78007E5A7B /* ToneAnalyzerV3.framework in Frameworks */,
+				77E9F7F81E344A4E007E5A7B /* ToneAnalyzerV3.framework in Frameworks */,
+				77E9F7F91E344A78007E5A7B /* RestKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,15 +99,19 @@
 		7129D6371E342EB300B022CA /* intervyou */ = {
 			isa = PBXGroup;
 			children = (
-				03DE74051E3442B2007A658B /* IBM.png */,
+				77E9F7F51E344A4E007E5A7B /* RestKit.framework */,
+				77E9F7F61E344A4E007E5A7B /* ToneAnalyzerV3.framework */,
+				03DE74051E3442B2007A658B /* IBMt.png */,
 				7129D6381E342EB300B022CA /* AppDelegate.swift */,
 				7129D63A1E342EB300B022CA /* ViewController.swift */,
+				7129D64A1E3434E000B022CA /* WhichCompany.swift */,
+				77E9F7FE1E344B9B007E5A7B /* InterviewViewController.swift */,
+				77E9F8001E345060007E5A7B /* stringExtension.swift */,
 				7129D63C1E342EB300B022CA /* Main.storyboard */,
 				03DE740D1E344757007A658B /* Military.png */,
 				03DE740B1E344704007A658B /* Google.png */,
 				03DE74071E3445C5007A658B /* Goldman.png */,
 				03DE74081E3445C5007A658B /* Snap.png */,
-				7129D64A1E3434E000B022CA /* WhichCompany.swift */,
 				7129D63F1E342EB300B022CA /* Assets.xcassets */,
 				7129D6411E342EB300B022CA /* LaunchScreen.storyboard */,
 				03DE74031E343CE5007A658B /* Logo.png */,
@@ -95,6 +130,7 @@
 				7129D6311E342EB300B022CA /* Sources */,
 				7129D6321E342EB300B022CA /* Frameworks */,
 				7129D6331E342EB300B022CA /* Resources */,
+				77E9F7FD1E344A78007E5A7B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -117,6 +153,7 @@
 				TargetAttributes = {
 					7129D6341E342EB300B022CA = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L8TS8ZKSQT;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -145,7 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03DE74091E3445C5007A658B /* Goldman.png in Resources */,
-				03DE74061E3442B2007A658B /* IBM.png in Resources */,
+				03DE74061E3442B2007A658B /* IBMt.png in Resources */,
 				03DE740C1E344704007A658B /* Google.png in Resources */,
 				03DE740A1E3445C5007A658B /* Snap.png in Resources */,
 				03DE74041E343CE5007A658B /* Logo.png in Resources */,
@@ -163,9 +200,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77E9F7FF1E344B9B007E5A7B /* InterviewViewController.swift in Sources */,
 				7129D64B1E3434E000B022CA /* WhichCompany.swift in Sources */,
 				7129D63B1E342EB300B022CA /* ViewController.swift in Sources */,
 				7129D6391E342EB300B022CA /* AppDelegate.swift in Sources */,
+				77E9F8011E345060007E5A7B /* stringExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +325,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L8TS8ZKSQT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/intervyou",
+				);
 				INFOPLIST_FILE = intervyou/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = icerberg.intervyou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,7 +343,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L8TS8ZKSQT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/intervyou",
+				);
 				INFOPLIST_FILE = intervyou/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = icerberg.intervyou;
 				PRODUCT_NAME = "$(TARGET_NAME)";

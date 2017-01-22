@@ -6,6 +6,10 @@
 	<string>en</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Analyzing your interview requires speech recognition. The app will be unable to analyze your interview without your permission.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Your microphone is needed to record the interview.</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -34,5 +38,22 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+<dict>
+    <key>NSExceptionDomains</key>
+    <dict>
+        <key>watsonplatform.net</key>
+        <dict>
+            <key>NSTemporaryExceptionRequiresForwardSecrecy</key>
+            <false/>
+            <key>NSIncludesSubdomains</key>
+            <true/>
+            <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+            <true/>
+            <key>NSTemporaryExceptionMinimumTLSVersion</key>
+            <string>TLSv1.0</string>
+        </dict>
+    </dict>
+</dict>
 </dict>
 </plist>
