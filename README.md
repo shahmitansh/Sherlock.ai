@@ -1,4 +1,4 @@
-Watson has a new friend. Sherlock.ai: "Interviews can be challenging. Preparing for them shouldn't have to be."
+"Interviews can be challenging. Preparing for them shouldn't have to be."
 
 # Sherlock.ai
 ## The Game is On.
