@@ -7,56 +7,62 @@
 //
 
 import UIKit
+var companyImage = ""
 
 class WhichCompany: UIViewController {
-
+    
     var whichCompanyChosen = ""
     
     @IBAction func IBMButton(_ sender: Any) {
         whichCompanyChosen = "IBM"
+        companyImage = "IBMt.png"
         self.performSegue(withIdentifier: "toInterview", sender: Any?.self)
     }
     let IBMQuestions = ["Tell me about a time when you had to present complex programming problem to a person that doesn’t understand technical jargon. How did you ensure that the other person understood you?",
-        "Tell me about a situation when you made a mistake at work. What happened exactly and how did you deal with it? What steps did you take to improve the situation?",
-        "What can you tell me about your experience?"]
+                        "Tell me about a situation when you made a mistake at work. What happened exactly and how did you deal with it? What steps did you take to improve the situation?",
+                        "What can you tell me about your experience?"]
     
-   
+    
     @IBAction func GoogleButton(_ sender: Any) {
         whichCompanyChosen = "Google"
+        companyImage = "Google.png"
         self.performSegue(withIdentifier: "toInterview", sender: Any?.self)
     }
     let GoogleQuestions = ["What’s an example of a time you helped a non-technical person with a technical problem, and how did you explain it to them?",
-        "What are your hobbies?",
-        "Why should we hire you?"]
+                           "What are your hobbies?",
+                           "Why should we hire you?"]
     
     
     @IBAction func SnapchatButton(_ sender: Any) {
         whichCompanyChosen = "Snapchat"
+        companyImage = "Snap.png"
         self.performSegue(withIdentifier: "toInterview", sender: Any?.self)
     }
     let SnapchatQuestions = ["Describe a situation in which you had to adjust to changes over which you had no control. How did you do this?",
-        "Tell me about a recent situation at work in which you were able to get management to accept one of your ideas.",
-        "What is your work style?"]
-
-
+                             "Tell me about a recent situation at work in which you were able to get management to accept one of your ideas.",
+                             "What is your work style?"]
+    
+    
     @IBAction func GoldmanSachsButton(_ sender: Any) {
-        whichCompanyChosen = "Goldman Sachs"
+        whichCompanyChosen = "Goldman Sacks"
+        companyImage = "Goldman.png"
         self.performSegue(withIdentifier: "toInterview", sender: Any?.self)
     }
     let GoldmanSachsQuestions = ["What do you like about your current work environment, and what do you not like about it?",
-        "Can you describe an environment or scenario where you would not thrive instantly?",
-        "What makes Goldman Sachs different to its competitors?"
+                                 "Can you describe an environment or scenario where you would not thrive instantly?",
+                                 "What makes Goldman Sachs different to its competitors?"
     ]
     
-
+    
     @IBAction func ArmyButton(_ sender: Any) {
         whichCompanyChosen = "Army"
+        companyImage = "Military.png"
         self.performSegue(withIdentifier: "toInterview", sender: Any?.self)
     }
     let ArmyQuestions = ["How do you evaluate success?",
-        "Why are you here?",
-        "What is your greatest weakness?"]
-
+                         "Why are you here?",
+                         "What is your greatest weakness?"]
+    
     @IBOutlet weak var ibmT: UIImageView!
     @IBOutlet weak var snapT: UIImageView!
     @IBOutlet weak var googleT: UIImageView!
@@ -94,11 +100,15 @@ class WhichCompany: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
     }
-
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -107,49 +117,53 @@ class WhichCompany: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "toInterview"){
             
-            let destination = segue.destination as! InterviewViewController
-                switch(whichCompanyChosen){
-                    case "IBM":
-                        for index in 0...2{
-                            destination.arrayOfQuestions.append(IBMQuestions[index])
-                        }
-                        break;
-                    case "Google":
-                        for index in 0...2{
-                            destination.arrayOfQuestions.append(GoogleQuestions[index])
-                        }
-                        break;
-                    case "Snapchat":
-                        for index in 0...2{
-                        destination.arrayOfQuestions.append(SnapchatQuestions[index])
-                        }
-                        break;
-                    case "Goldman Sachs":
-                        for index in 0...2{
-                        destination.arrayOfQuestions.append(GoldmanSachsQuestions[index])
-                        }
-                        break;
-                    case "Army":
-                        for index in 0...2{
-                        destination.arrayOfQuestions.append(ArmyQuestions[index])
-                        }
-                        break;
-                default:
-                    break;
+            switch(whichCompanyChosen){
+            case "IBM":
+                for index in 0...2{
+                    arrayOfQuestions.append(IBMQuestions[index])
+                    companyName = "IBM"
                 }
+                break;
+            case "Google":
+                for index in 0...2{
+                    arrayOfQuestions.append(GoogleQuestions[index])
+                    companyName = "Google"
+                }
+                break;
+            case "Snapchat":
+                for index in 0...2{
+                    arrayOfQuestions.append(SnapchatQuestions[index])
+                    companyName = "Snapchat"
+                }
+                break;
+            case "Goldman Sacks":
+                for index in 0...2{
+                    arrayOfQuestions.append(GoldmanSachsQuestions[index])
+                    companyName = "Goldman Sacks"
+                }
+                break;
+            case "Army":
+                for index in 0...2{
+                    arrayOfQuestions.append(ArmyQuestions[index])
+                    companyName = "The US Army"
+                }
+                break;
+            default:
+                break;
             }
-            
         }
+        
     }
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+/*
+ // MARK: - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+ // Get the new view controller using segue.destinationViewController.
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 
